@@ -8,8 +8,8 @@ The core idea is from the following two paper:
 1. Residual Dense Network for Image Super-Resolution
 2. cGANs with projection discriminator
 ##### Generator: Residual Dense Network
-![]()
+![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/RDN.jpg)
 ##### Discriminator: cGAN projection
-![]()
+![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/pro.jpg)
 
 

@@ -11,5 +11,9 @@ The core idea is from the following two paper:
 ![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/RDN.jpg)
 ##### Discriminator: cGAN projection
 ![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/pro.jpg)
+# Reference 
+[1] Miyato T, Koyama M. cGANs with projection discriminator[J]. arXiv preprint arXiv:1802.05637, 2018.
+
+[2] Zhang Y, Tian Y, Kong Y, et al. Residual dense network for image super-resolution[C]//The IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 2018.
 
 

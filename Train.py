@@ -41,9 +41,10 @@ def train():
         HR_data, LR_data = read_crop_data(TRAINING_SET_PATH, BATCH_SIZE, [96, 96, 3], 4)
         sess.run(D_opt, feed_dict={HR: HR_data, LR: LR_data})
         [_, iteration] = sess.run([G_opt, itr], feed_dict={HR: HR_data, LR: LR_data})
+        iteration_ = iteration*1.0
         iteration = MAX_ITERATION - iteration
         if iteration < MAX_ITERATION // 2:
-            learning_rate = learning_rate * (iteration * 2 / MAX_ITERATION)
+            learning_rate = learning_rate * (iteration_ * 2 / MAX_ITERATION)
         if iteration % 10 == 0:
             [D_LOSS, G_LOSS, LEARNING_RATE, img] = sess.run([D_loss, G_loss, learning_rate, SR], feed_dict={HR: HR_data, LR: LR_data})
             output = (np.concatenate((HR_data[0, :, :, :], img[0, :, :, :]), axis=1) + 1) * 127.5

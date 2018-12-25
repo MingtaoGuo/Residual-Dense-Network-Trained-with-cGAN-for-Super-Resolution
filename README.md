@@ -14,7 +14,7 @@ The core idea is from the following two papers:
 # Results
 These results is just trained about 200,000 iterations (full: 600,000) with batch size of 16. 
 
-|Raw|Bicubie(x4)|RDN_GAN(x4)|
+|Raw|Bicubic(x4)|RDN_GAN(x4)|
 |-|-|-|
 |![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_flow.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_flow.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_flow.jpg)|
 |![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_butf.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_butf.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_butf.jpg)|

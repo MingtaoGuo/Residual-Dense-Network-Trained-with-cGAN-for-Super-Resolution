@@ -43,7 +43,7 @@ def train():
         [_, iteration] = sess.run([G_opt, itr], feed_dict={HR: HR_data, LR: LR_data})
         iteration_ = iteration*1.0
         iteration = MAX_ITERATION - iteration
-        if iteration < MAX_ITERATION // 2:
+        if iteration > MAX_ITERATION // 2:
             learning_rate = learning_rate * (iteration_ * 2 / MAX_ITERATION)
         if iteration % 10 == 0:
             [D_LOSS, G_LOSS, LEARNING_RATE, img] = sess.run([D_loss, G_loss, learning_rate, SR], feed_dict={HR: HR_data, LR: LR_data})

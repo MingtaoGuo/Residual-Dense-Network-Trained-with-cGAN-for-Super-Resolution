@@ -12,10 +12,13 @@ The core idea is from the following two paper:
 ##### Discriminator: cGAN projection
 ![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/pro.jpg)
 # Results
-|Raw|Bicubie(x4)|RDN_GAN|
+|Raw|Bicubie(x4)|RDN_GAN(x4)|
 |-|-|-|
 |![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_flow.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_flow.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_flow.jpg)|
 |![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_butf.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_butf.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_butf.jpg)|
+|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_dog.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_dog.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_dog.jpg)|
+|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_cat.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_cat.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_cat.jpg)|
+|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_wom.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_wom.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_wom.jpg)|
 # Reference 
 [1] Zhang Y, Tian Y, Kong Y, et al. Residual dense network for image super-resolution[C]//The IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 2018.
 

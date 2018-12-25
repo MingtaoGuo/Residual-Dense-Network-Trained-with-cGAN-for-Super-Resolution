@@ -35,7 +35,7 @@ def train():
         G_opt = tf.train.AdamOptimizer(learning_rate, beta1=0., beta2=0.9).minimize(G_loss, var_list=RDN.var_list())
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
-
+    lr0 = 2e-4
     saver = tf.train.Saver()
     while True:
         HR_data, LR_data = read_crop_data(TRAINING_SET_PATH, BATCH_SIZE, [96, 96, 3], 4)
@@ -44,7 +44,7 @@ def train():
         iteration_ = iteration*1.0
         iteration = MAX_ITERATION - iteration
         if iteration > MAX_ITERATION // 2:
-            learning_rate = learning_rate * (iteration_ * 2 / MAX_ITERATION)
+            learning_rate = lr0 * (iteration_ * 2 / MAX_ITERATION)
         if iteration % 10 == 0:
             [D_LOSS, G_LOSS, LEARNING_RATE, img] = sess.run([D_loss, G_loss, learning_rate, SR], feed_dict={HR: HR_data, LR: LR_data})
             output = (np.concatenate((HR_data[0, :, :, :], img[0, :, :, :]), axis=1) + 1) * 127.5

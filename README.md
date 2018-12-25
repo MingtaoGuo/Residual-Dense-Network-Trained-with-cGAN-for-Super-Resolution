@@ -4,7 +4,7 @@ This repository is as a research project in the field of super resolution. It us
 # Introduction
 ### This is a trial for super-resolution
 The residual dense network has many advantages for reconstructing SR images, and we use GANs to enhance RDN.
-The core idea is from the following two paper:
+The core idea is from the following two papers:
 1. Residual Dense Network for Image Super-Resolution
 2. cGANs with projection discriminator
 ##### Generator: Residual Dense Network
@@ -12,6 +12,8 @@ The core idea is from the following two paper:
 ##### Discriminator: cGAN projection
 ![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/pro.jpg)
 # Results
+These results is just trained about 200,000 iterations (full: 600,000) with batch size of 16. 
+
 |Raw|Bicubie(x4)|RDN_GAN(x4)|
 |-|-|-|
 |![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/hr_flow.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/bic_flow.jpg)|![](https://github.com/MingtaoGuo/Residual-Dense-Network-Trained-with-cGAN-for-Super-Resolution/blob/master/IMAGES/sr_flow.jpg)|

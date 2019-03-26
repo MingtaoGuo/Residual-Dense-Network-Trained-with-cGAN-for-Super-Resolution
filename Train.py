@@ -44,7 +44,8 @@ def train():
         iteration_ = iteration*1.0
         iteration = MAX_ITERATION - iteration
         if iteration > MAX_ITERATION // 2:
-            learning_rate = lr0 * (iteration_ * 2 / MAX_ITERATION)
+            learning_rate_ = lr0 * (iteration_ * 2 / MAX_ITERATION)
+            sess.run(tf.assign(learning_rate, learning_rate_))
         if iteration % 10 == 0:
             [D_LOSS, G_LOSS, LEARNING_RATE, img] = sess.run([D_loss, G_loss, learning_rate, SR], feed_dict={HR: HR_data, LR: LR_data})
             output = (np.concatenate((HR_data[0, :, :, :], img[0, :, :, :]), axis=1) + 1) * 127.5

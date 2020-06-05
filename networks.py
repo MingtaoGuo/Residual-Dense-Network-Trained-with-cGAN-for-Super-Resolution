@@ -35,7 +35,7 @@ class Discriminator:
 
     def __call__(self, inputs, y):
         with tf.variable_scope(self.name, reuse=tf.AUTO_REUSE):
-            inputs = ResBlock("Res1", inputs, 3, 64)
+            inputs = ResBlock0("Res1", inputs, 3, 64)
             inputs = ResBlock("Res2", inputs, 3, 64, False)
             inputs = ResBlock("Res3", inputs, 3, 128)
             inputs = ResBlock("Res4", inputs, 3, 128, False)

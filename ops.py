@@ -121,6 +121,23 @@ def ResBlock(name, inputs, k_size, nums_out, is_down=True):
             outputs = inputs + temp
     return outputs
 
+def ResBlock0(name, inputs, k_size, nums_out, is_down=True):
+    #inputs: B x H x W x C_in
+    with tf.variable_scope(name):
+        temp = inputs
+        inputs = conv("conv1", inputs, k_size, nums_out, 1, True)  # inputs: B x H/2 x W/2 x C_out
+        inputs = relu(inputs)
+        inputs = conv("conv2", inputs, k_size, nums_out, 1, True)  # inputs: B x H/2 x W/2 x C_out
+        inputs = relu(inputs)
+        if is_down:
+            inputs = avg_pool(inputs)
+            down_sampling = conv("down_sampling_" + name, temp, 1, nums_out, 1, True)  # down_sampling: B x H x W x C_out
+            down_sampling = avg_pool(down_sampling)
+            outputs = inputs + down_sampling
+        else:
+            outputs = inputs + temp
+    return outputs
+
 def Inner_product(inputs, y):
     with tf.variable_scope("IP"):
         inputs = conv("conv", inputs, 3, 3, 1, True)
